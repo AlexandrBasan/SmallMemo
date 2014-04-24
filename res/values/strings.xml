@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Labels -->
+    <string name="app_name">Small Memo</string>
+	<string name="label_settings">SmallMemo: Settings</string>
+	<string name="label_service">SmallMemoService</string>
+	<string name="label_receiver">SmallMemoBroadcastReceiver</string>
+	<string name="label_license">License: GPL v3</string>
+	<string name="label_about">SmallMemo: About</string>
+    
+	<!-- Menu Items -->
+    <string name="menu_insert">New Memo</string>
+    <string name="menu_delete">Delete</string>
+	<string name="menu_search">Search</string>
+	<string name="menu_preferences">Preferences</string>
+	<string name="menu_about">About</string>
+    
+	<!-- MainLauncher -->
+    <string name="new_memo">New Memo</string>
+    <string name="new_memo_description">Create a Memo</string>
+    <string name="memo_saved">Memo Saved</string>
+	<string name="clear_search">Clear Search</string>
+	<string name="search_hint">Enter your Search</string>
+	
+	<!-- MemoEdit -->
+	<string name="notification_checkbox">Display as Notification</string>
+	<string name="title_hint">Title</string>
+	<string name="body_hint">Body</string>
+	<string name="cancel">Cancel</string>
+	<string name="delete">Delete</string>
+		
+	<!-- LicenseDisplay -->	
+	<!-- This gets funky: when reading the data from XML and displaying it in HTML formatting we need to replace HTML/XML characters with their escaped values
+	     because the Resources.getString() method will parse the formatting...so in order to get HTML characters to appear as the actual character (like a
+	     '<') we need to double-escape the characters...hence the weird ending surrounding the link (it's supposed to look like 
+	     "If not, see <http://www.gnu.org/licences/>.")-->
+	<string name="license_disclaimer"> </string>
+	<string name="view_full_license">&lt;a href=&quot;http://gnu.org/licenses/gpl-3.0.html&quot;&gt;View Full License&lt;/a&gt;</string>
+	
+	<!-- About -->
+	<string name="description">Quick and easy notes on the go.</string>
+	<string name="copyleft"> </string>
+	<string name="market_link"> </string>
+	<string name="get_source_code"> </string>
+	
+	<!-- Preferences -->
+	<string name="category_license"> </string>
+	<string name="category_usage"> </string>
+	<string name="display_on_startup"> </string>
+	<string name="display_on_startup_summary"> </string>
+	<string name="view_license">View License</string>
+	<string name="view_license_summary">View the full GPL 3.0 Documentation</string>
+	<string name="new_memo_notification">New SmallMemo Notification</string>
+	<string name="new_memo_notification_summary">Place a notification in the status bar to easily make a new memo</string>
+	
+	<string name="pref_display_on_startup"> </string>
+	<string name="pref_view_license">view_full_license</string>
+	<string name="pref_new_memo_notification">new_memo_notification</string>
+	<string name="confirm_del">Confirm Deletion</string>
+	<string name="del_memo_q">Are you sure you want to delete this memo?</string>
+	<string name="prov_title">You must provide a title</string>
+	<string name="title_allredy_tek">That title is already taken</string>
+	<string name="create_new_memo">Create a New Memo</string>
+	<string name="tap_make_memo">Tap to make a new memo.</string>
+	<string name="error_memol_null">The MemoLauncher cannot be null!</string>
+	<color name="Green">#82c300</color>
+	
+<string name="admob_publisher_id">a1519df0343c65a</string>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout android:id="@+id/topBar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:focusable="true">
+        
+        <RelativeLayout android:id="@+id/newMemo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:drawable/list_selector_background"
+            android:focusable="true"
+            android:clickable="true">
+            
+	        <ImageView android:id="@+id/newMemoImage"
+	            android:layout_width="34dip"
+	            android:layout_height="fill_parent"
+	            android:focusable="false"
+	            android:scaleType="fitCenter"
+	            android:layout_marginLeft="2dip"
+	            android:layout_marginRight="10dip"
+	            android:contentDescription="@string/new_memo_description"
+	            android:src="@drawable/memo_add"/>
+	        
+	       	<TextView android:id="@+id/newMemoText"
+	       	    android:layout_width="wrap_content"
+	       	    android:layout_height="wrap_content"
+	       	    android:text="@string/new_memo"
+	       	    android:textColor="@color/main_text"
+	       	    android:duplicateParentState="true"
+	       	    android:textSize="25sp"
+	       	    android:layout_alignParentTop="true"
+	       	    android:layout_alignParentBottom="true"
+	       	    android:gravity="center_vertical"
+	       	    android:layout_toRightOf="@id/newMemoImage"/>
+       </RelativeLayout>
+        
+       	
+       	<!-- Fly-down search bar -->
+       	<RelativeLayout android:id="@+id/searchContainer"
+       	    android:layout_width="fill_parent"
+       	    android:layout_height="50dip"
+       	    android:visibility="gone"
+       	    android:focusable="true">
+       	    
+       	    <ImageView android:id="@+id/filterClearer"
+       	        android:layout_width="wrap_content"
+       	        android:layout_height="wrap_content"
+       	        android:layout_alignParentRight="true"
+       	        android:padding="7dip"
+       	        android:contentDescription="@string/clear_search"
+       	        android:focusable="false"
+       	        android:src="@drawable/ic_input_delete"/>
+       	    
+       	    <EditText android:id="@+id/filter"
+       	        android:layout_width="wrap_content"
+       	        android:layout_height="50dip"
+       	        android:layout_alignParentLeft="true"
+       	        android:inputType="text"
+       	        android:hint="@string/search_hint"
+       	        android:layout_marginTop="1dip"
+       	        android:focusable="true"
+       	        android:layout_toLeftOf="@id/filterClearer"/>
+       	</RelativeLayout>
+       	
+       	<TextView android:id="@+id/line"
+       	    style="@style/hz_rule"
+       	    android:layout_margin="0dip"
+            android:focusable="false"
+       	    android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+	
+	<ListView android:id="@+id/memoList"
+		android:scrollingCache="true"
+		android:scrollbars="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:clickable="true"
+		android:focusable="true"/>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+			
+	<EditText android:id="@+id/editTitle"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:autoText="true"
+		android:capitalize="words"
+		android:singleLine="true"
+		android:hint="@string/title_hint"/>
+	
+	<CheckBox android:id="@+id/editNotify"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/notification_checkbox"/>
+	
+	<ScrollView android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:scrollbars="vertical"
+		android:fillViewport="true"
+		android:isScrollContainer="true">
+		
+		<EditText
+		    android:id="@+id/editBody"
+		    android:layout_width="match_parent"
+		    android:layout_height="140dp"
+		    android:autoText="true"
+		    android:capitalize="sentences"
+		    android:gravity="top"
+		    android:hint="@string/body_hint"
+		    android:scrollbars="none" />
+
+	</ScrollView>
+</LinearLayout>
